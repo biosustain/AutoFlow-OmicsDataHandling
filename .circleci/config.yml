@@ -102,7 +102,7 @@ jobs:
       - test:
           os: win
 
-  # Linux integration 
+  # Linux integration
   Integration-on-linux:
     executor: python/default
     steps:
@@ -146,7 +146,7 @@ jobs:
           command: |
             psql -c "create database Isatab_DB" -U postgres -h localhost -p 5432
             psql -h localhost -U biosustain -d biosustaindb -f AutoFlow-OmicsDataHandling/IsaTab.sql
-              
+
   # MacOS integration
   Integration-on-macos:
     macos:
